@@ -1,0 +1,12 @@
+version: '3'
+services:
+  dash_foguinho_v2:
+    container_name: dash_municipio
+    restart : always
+    build: 
+      context: ./site-content/
+      dockerfile: Dockerfile
+    ports:
+      - 8181:80 
+
+  
